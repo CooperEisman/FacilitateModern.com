@@ -15,7 +15,7 @@ body {
 }
 
 #expand-button {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     width: 30px;
@@ -49,6 +49,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     color: white;
+    background-color: #666666;
     transition: transform 0.2s ease-in-out;
     z-index: 1;
 }
@@ -151,7 +152,7 @@ body {
     margin: auto;
     font-size: 36px;
     text-align: center;
-    position: relative;
+    position: absolute;
 }
 
 #animation-text {
@@ -223,9 +224,9 @@ body {
     text-align: center;
 }
 
-#content_holder {
+#BlackScreenCL {
     width: 100%;
-    height: 300%;
+    height: 100%;
     position: absolute;
     background-color: #141414;
     z-index: -2;
@@ -280,4 +281,14 @@ body {
 
 .scroll-down.visible {
     opacity: 0;
+}
+
+#BlackScreenTW {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+    background-color: #141414;
+    z-index: -2;
+    color: white;
 }

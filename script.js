@@ -7,7 +7,8 @@ expandButton.addEventListener('click', function() {
 });
 
 
-const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
+ const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
+//const textArray = [  "Businesses | Websites | Graphics | Workflows"];
 
 const textContainer = document.getElementById("animation-text");
 
@@ -60,7 +61,7 @@ window.addEventListener('scroll', () => {
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 507,
+            "value": 300,
             "density": {
                 "enable": true,
                 "value_area": 1104.8066982851817
@@ -113,7 +114,7 @@ particlesJS("particles-js", {
         },
         "move": {
             "enable": true,
-            "speed": 5,
+            "speed": 3.5,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -130,7 +131,7 @@ particlesJS("particles-js", {
         "detect_on": "canvas",
         "events": {
             "onhover": {
-                "enable": true,
+                "enable": false,
                 "mode": "repulse"
             },
             "onclick": {
