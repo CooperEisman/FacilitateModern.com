@@ -7,8 +7,8 @@ expandButton.addEventListener('click', function() {
 });
 
 
- const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
-//const textArray = [  "Businesses | Websites | Graphics | Workflows"];
+//const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
+const textArray = [  "Businesses | Websites | Graphics | Workflows"];
 
 const textContainer = document.getElementById("animation-text");
 
@@ -25,7 +25,7 @@ function typeText() {
 
         if (i === textLength) {
             clearInterval(intervalId);
-            setTimeout(deleteText, 1000);
+            setTimeout(deleteText, 1500);
         }
     }, 120);
 }
@@ -42,7 +42,7 @@ function deleteText() {
             }
             setTimeout(typeText, 1200);
         }
-    }, 100);
+    }, 18);
 }
 
 typeText();

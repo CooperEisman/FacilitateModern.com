@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NimbusRoman;
+    src: url("nimbus-roman-no9-l.regular.otf") format("opentype");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -49,7 +54,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     color: white;
-    background-color: #666666;
+    background-color: orange;
     transition: transform 0.2s ease-in-out;
     z-index: 1;
 }
@@ -150,7 +155,6 @@ body {
 /* Animation for Hero */
 #animation-text-container {
     margin: auto;
-    font-size: 36px;
     text-align: center;
     position: absolute;
 }
@@ -171,18 +175,16 @@ body {
 
 #animation-title {
     margin: auto;
-    font-size: 36px;
     text-align: center;
-    transform: translateY(-42px) translateX(-135px);
+    transform: translateY(-42px) translateX(-150px);
     position: absolute;
     color: #cccccc;
 }
 
 #color_title {
     margin: auto;
-    font-size: 36px;
     text-align: center;
-    transform: translateY(-42px) translateX(40px);
+    transform: translateY(-42px) translateX(50px);
 
     position: absolute;
     color: orange;
@@ -222,6 +224,8 @@ body {
     align-items: center;
     color: #ffffff;
     text-align: center;
+    font-family: NimbusRoman;
+    font-size: 45px;
 }
 
 #BlackScreenCL {
