@@ -57,7 +57,8 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: none;
     background-color: transparent;
     color: white;
@@ -119,7 +120,7 @@ body {
 .hero {
     background-image: url('https://picsum.photos/1920/1080');
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,3 +165,26 @@ body {
     margin-top: 0;
 }
 
+/* Rotating Text */
+.text-rotate {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    width: 20ch;
+    animation: typing 2.5s steps(20, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20ch }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
