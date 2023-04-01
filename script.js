@@ -54,10 +54,20 @@ function deleteText() {
 
 typeText();
 
+// Listen for scroll events and add class to body if scrolled
+window.addEventListener("scroll", function () {
+    var scrollPos = window.scrollY;
+    var particles = document.getElementById("particles-js");
+    var content = document.querySelector(".content");
+    var opacity = 1 - scrollPos / 800;
+    particles.style.opacity = opacity;
+    content.style.opacity = opacity;
+});
+
 particlesJS("particles-js", {
     "particles": {
     "number": {
-        "value": 507,
+        "value": 300,
             "density": {
             "enable": true,
                 "value_area": 1104.8066982851817
