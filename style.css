@@ -118,10 +118,10 @@ body {
 
 /* Hero section styles */
 .hero {
-    background-image: url('blueprint_backround.webp');
+    background-image: url('hero_backround.png');
     background-size: cover;
     width: 100vw;
-    height: 68vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,46 +146,55 @@ body {
     color: #ccc;
 }
 
-/* Services section styles */
-.services {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 50px;
+/* Animation for Hero */
+#animation-text-container {
+    margin: auto;
+    font-size: 36px;
     text-align: center;
+    position: relative;
 }
 
-.services h2 {
-    margin-top: 0;
+#animation-text {
+    display: inline-block;
+    color: #cccccc;
 }
 
-.service-item {
-    margin-bottom: 40px;
+#animation-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    background-color: white;
+    margin-left: -2px;
+    animation: cursor 0.5s infinite;
 }
 
-.service-item h3 {
-    margin-top: 0;
-}
-
-/* Rotating Text */
-.text-rotate {
-    font-size: 24px;
-    font-weight: bold;
+#animation-title {
+    margin: auto;
+    font-size: 36px;
     text-align: center;
-    margin-top: 50px;
-    color: #333;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    width: 20ch;
-    animation: typing 2.5s steps(20, end), blink-caret .75s step-end infinite;
+    transform: translateY(-42px) translateX(-135px);
+    position: absolute;
+    color: #cccccc;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 20ch }
+#color_title {
+    margin: auto;
+    font-size: 36px;
+    text-align: center;
+    transform: translateY(-42px) translateX(40px);
+
+    position: absolute;
+    color: orange;
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

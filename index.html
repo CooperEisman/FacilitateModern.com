@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Sample Website with Sidebar</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <html lang="en">
 
-<body>
-<button id="expand-button">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</button>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample Website with Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<div id="sidebar" class="expanded">
-  <text class="sidebar-title">Menu</text>
-  <button class="sidebar-button">Home<span class="sidebar-icon home-icon"></span></button>
-  <hr class="sidebar-bar">
-  <button class="sidebar-button">About<span class="sidebar-icon"></span></button>
-  <hr class="sidebar-bar">
-  <button class="sidebar-button">Contact<span class="sidebar-icon"></span></button>
-  <hr class="sidebar-bar">
-  <button class="sidebar-button">Blog<span class="sidebar-icon"></span></button>
-</div>
+  <body>
+    <button id="expand-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-<div id="main-content" class="main-content">
-  <section class="hero">
-    <div class="text-rotate"></div>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-item">
-      <h3>Graphic Design</h3>
-      <p>We create stunning designs that get your brand noticed.</p>
+    <div id="sidebar" class="expanded">
+      <text class="sidebar-title">Menu</text>
+      <button class="sidebar-button">Home<span class="sidebar-icon home-icon"></span></button>
+      <hr class="sidebar-bar">
+      <button class="sidebar-button">About<span class="sidebar-icon"></span></button>
+      <hr class="sidebar-bar">
+      <button class="sidebar-button">Contact<span class="sidebar-icon"></span></button>
+      <hr class="sidebar-bar">
+      <button class="sidebar-button">Blog<span class="sidebar-icon"></span></button>
     </div>
-    <div class="service-item">
-      <h3>Website Creation</h3>
-      <p>We build custom websites that are both beautiful and functional.</p>
-    </div>
-    <div class="service-item">
-      <h3>Marketing</h3>
-      <p>We help you get your message in front of the right audience.</p>
-    </div>
-    <div class="service-item">
-      <h3>Communications and Copywriting</h3>
-      <p>We write compelling content that engages your customers.</p>
-    </div>
-  </section>
-</div>
 
-<script src="script.js"></script>
-</body>
+    <div id="main-content" class="main-content">
+      <section class="hero">
+        <div id="animation-title">We</div>
+        <div id="color_title">Facilitate Modern</div>
+        <div id="animation-text-container">
+          <span id="animation-text"></span>
+          <span id="animation-cursor"></span>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+          <h3>Graphic Design</h3>
+          <p>We create stunning designs that get your brand noticed.</p>
+        </div>
+        <div class="service-item">
+          <h3>Website Creation</h3>
+          <p>We build custom websites that are both beautiful and functional.</p>
+        </div>
+        <div class="service-item">
+          <h3>Marketing</h3>
+          <p>We help you get your message in front of the right audience.</p>
+        </div>
+        <div class="service-item">
+          <h3>Communications and Copywriting</h3>
+          <p>We write compelling content that engages your customers.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
