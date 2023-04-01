@@ -118,9 +118,10 @@ body {
 
 /* Hero section styles */
 .hero {
-    background-image: url('https://picsum.photos/1920/1080');
+    background-image: url('blueprint_backround.webp');
     background-size: cover;
-    height: 50vh;
+    width: 100vw;
+    height: 68vh;
     display: flex;
     justify-content: center;
     align-items: center;
