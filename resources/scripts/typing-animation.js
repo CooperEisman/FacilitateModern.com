@@ -1,6 +1,6 @@
 const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
 
-const textContainer = document.getElementById("animation-text");
+const textContainer = document.getElementById("typing-animation-text");
 
 let currentTextIndex = 0;
 

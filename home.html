@@ -8,52 +8,29 @@
   </head>
 
   <body>
-    <button id="expand-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-
-    <div id="sidebar" class="expanded">
-      <text class="sidebar-title">Menu</text>
-      <button class="sidebar-button">Home<span class="sidebar-icon home-icon"></span></button>
-      <hr class="sidebar-bar">
-      <button class="sidebar-button">About<span class="sidebar-icon"></span></button>
-      <hr class="sidebar-bar">
-      <button class="sidebar-button">Contact<span class="sidebar-icon"></span></button>
-      <hr class="sidebar-bar">
-      <button class="sidebar-button">Blog<span class="sidebar-icon"></span></button>
-    </div>
 
     <div class="scroll-down">
       <div class="scroll-down-text">Scroll Down</div>
       <div class="arrow"></div>
     </div>
 
-    <div id="main-content" class="main-content">
+    <section class="hero">
       <div id="particles-js"></div>
 
       <div class = "particle_overlay">
-        <div id="animation-title">We</div>
-        <div id="color_title">Facilitate Modern</div>
-        <div id="animation-text-container">
-          <span id="animation-text"></span>
-          <span id="animation-cursor"></span>
+        <div id="typing-animation-title">We</div>
+        <div id="typing-animation-title-accent">Facilitate Modern</div>
+        <div id="typing-animation-container">
+          <span id="typing-animation-text"></span>
+          <span id="typing-animation-cursor"></span>
         </div>
       </div>
+    </section>
 
-      <div id="BlackScreenCL"></div>
-
-      <div id="BlackScreenTW">
-        <h1>Example Text</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, quam a aliquet gravida, dolor enim bibendum massa, non hendrerit enim ante sed quam. Duis ut diam eget arcu laoreet bibendum. </p>
-      </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="resources/scripts/particlesdef.js"></script>
-    <script src="resources/scripts/sidebar.js"></script>
-    <script src="resources/scripts/typingtext.js"></script>
+    <script src="resources/scripts/typing-animation.js"></script>
     <script src="resources/scripts/scrollprompt.js"></script>
   </body>
 </html>
