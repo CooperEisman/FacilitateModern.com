@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample Website with Sidebar</title>
+    <link rel="stylesheet" href="resources/stylesheets/homeStyle.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="#" onclick="goToMainScreen()"><img src="resources/images/FM_typescriptlogo.png" alt="Facilitate Modern Logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a>
+            <ul>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Website Creation</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Communications</a></li>
+              <li><a href="#">Copywriting</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Samples</a><li>
+          <li><a href="#">Our Team</a></li>
+          <a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="scroll-prompt">
+        <div class="scroll-prompt-text">Learn More</div>
+        <div class="scroll-prompt-arrow"></div>
+      </div>
+
+      <section class="hero">
+        <div id="particles-js"></div>
+
+        <div class = "particle_overlay">
+          <div id="typing-animation-title">We</div>
+          <div id="typing-animation-title-accent">Facilitate Modern</div>
+          <div id="typing-animation-container">
+            <span id="typing-animation-text"></span>
+            <span id="typing-animation-cursor"></span>
+          </div>
+        </div>
+
+        <div id="services">
+          <h2>Our Services</h2>
+          <div class="service">
+            <img src="https://via.placeholder.com/150" alt="Graphic Design">
+            <h3>Graphic Design</h3>
+            <p>We offer customized graphic design services that are tailored to your specific needs and requirements.</p>
+          </div>
+          <div class="service">
+            <img src="https://via.placeholder.com/150" alt="Website Creation">
+            <h3>Website Creation</h3>
+            <p>We build modern, responsive, and user-friendly websites that help businesses to succeed online.</p>
+          </div>
+          <div class="service">
+            <img src="https://via.placeholder.com/150" alt="Marketing">
+            <h3>Marketing</h3>
+            <p>We help businesses to grow their customer base and increase their revenue through effective marketing strategies.</p>
+          </div>
+          <div class="service">
+            <img src="https://via.placeholder.com/150" alt="Communications and Copywriting">
+            <h3>Communications and Copywriting</h3>
+            <p>We specialize in creating high-quality content that engages your audience and helps to build your brand.</p>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="resources/scripts/particlesdef.js"></script>
+    <script src="resources/scripts/typing-animation.js"></script>
+    <script src="resources/scripts/scrollprompt.js"></script>
+    <script src="resources/scripts/header.js"></script>
+  </body>
+</html>
