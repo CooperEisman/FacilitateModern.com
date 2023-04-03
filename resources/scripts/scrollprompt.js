@@ -1,5 +1,5 @@
 // Listen for scroll events and add class to body if scrolled
-const scrollDown = document.querySelector('.scroll-down');
+const scrollDown = document.querySelector('.scroll-prompt');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         scrollDown.classList.add('visible');
