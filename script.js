@@ -7,8 +7,7 @@ expandButton.addEventListener('click', function() {
 });
 
 
-//const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
-const textArray = [  "Businesses | Websites | Graphics | Workflows"];
+const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
 
 const textContainer = document.getElementById("animation-text");
 
