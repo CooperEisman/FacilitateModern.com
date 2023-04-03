@@ -1,6 +1,6 @@
 @font-face {
     font-family: NimbusRoman;
-    src: url("resources/fonts/nimbus-roman-no9-l.regular.otf") format("opentype");
+    src: url("nimbus-roman-no9-l.regular.otf") format("opentype");
 }
 
 body {
@@ -87,7 +87,7 @@ body {
 }
 
 .home-icon {
-    background-image: url('resources/images/home.png');
+    background-image: url('home.png');
 }
 
 .sidebar-bar {
