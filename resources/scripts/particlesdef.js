@@ -1,61 +1,3 @@
-let expandButton = document.getElementById('expand-button');
-let sidebar = document.getElementById('sidebar');
-
-expandButton.addEventListener('click', function() {
-    expandButton.classList.toggle('expanded');
-    sidebar.classList.toggle('expanded');
-});
-
-
-const textArray = [  "Businesses",  "Websites",  "Graphics",  "Workflows"];
-
-const textContainer = document.getElementById("animation-text");
-
-let currentTextIndex = 0;
-
-function typeText() {
-    const currentText = textArray[currentTextIndex];
-    const textLength = currentText.length;
-    let i = 0;
-
-    const intervalId = setInterval(() => {
-        textContainer.textContent += currentText[i];
-        i++;
-
-        if (i === textLength) {
-            clearInterval(intervalId);
-            setTimeout(deleteText, 1500);
-        }
-    }, 120);
-}
-
-function deleteText() {
-    const intervalId = setInterval(() => {
-        textContainer.textContent = textContainer.textContent.slice(0, -1);
-
-        if (textContainer.textContent === "") {
-            clearInterval(intervalId);
-            currentTextIndex++;
-            if (currentTextIndex === textArray.length) {
-                currentTextIndex = 0;
-            }
-            setTimeout(typeText, 1200);
-        }
-    }, 18);
-}
-
-typeText();
-
-// Listen for scroll events and add class to body if scrolled
-const scrollDown = document.querySelector('.scroll-down');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        scrollDown.classList.add('visible');
-    } else {
-        scrollDown.classList.remove('visible');
-    }
-});
-
 // Definitions for Particles
 particlesJS("particles-js", {
     "particles": {
@@ -166,13 +108,4 @@ particlesJS("particles-js", {
         }
     },
     "retina_detect": true
-});
-
-window.addEventListener("scroll", function () {
-    let scrollPos = window.scrollY;
-    let particles = document.getElementById("particles-js");
-    let content = document.querySelector(".content");
-    let opacity = 1 - scrollPos / 800;
-    particles.style.opacity = opacity;
-    content.style.opacity = opacity;
 });
